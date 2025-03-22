@@ -36,10 +36,40 @@ git commit -m "feat: add cursor rules as submodule"
 
 ### Updating rules across projects
 
-1. Update the submodule from the main project:
+1. To get the latest rules from the central repository:
 
 ```bash
 git submodule update --remote --merge
 git add .cursor/rules/global
 git commit -m "chore: update cursor rules"
+```
+
+### Modifying rules
+
+1. Make your changes to the rule files
+
+2. Commit and push your changes directly from the submodule directory:
+
+```bash
+cd .cursor/rules/global
+git add .
+git commit -m "docs/feat/fix: describe your changes"
+git push
+```
+
+### Pull latest changes
+
+```bash
+# Navigate to the global rules directory
+cd .cursor/rules/global
+
+# Pull the latest changes
+git pull origin main
+
+# Return to your project root
+cd ../../..
+
+# Update the submodule reference in your main project
+git add .cursor/rules/global
+git commit -m "chore: update cursor rules with latest changes"
 ```
