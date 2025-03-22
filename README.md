@@ -43,18 +43,3 @@ git submodule update --remote --merge
 git add .cursor/rules/global
 git commit -m "chore: update cursor rules"
 ```
-
-## Rules Included
-
-- `change-management.mdc`: Standards for handling code changes, reversions, and redirections
-- `command-execution.mdc`: Standards for handling command execution in conversations
-- `critical-thinking.mdc`: Standards for breaking out of circular problem-solving patterns
-- `cursor-rule-creation.mdc`: Guidelines for creating Cursor AI rules
-- `cursor_rules_location.mdc`: Information about rule locations and organization
-- `development-plan.mdc`: Standards for implementing features based on user requirements
-- `git-conventional-commits.mdc`: Automatically commit changes using conventional commits format
-- `library-reuse.mdc`: Standards for verifying library existence before installation
-- `problem-solving.mdc`: Standards for approaching and solving coding problems
-- `sensitive-data.mdc`: Standards for handling sensitive data like API keys and passwords
-- `single-task-focus.mdc`: Standards for maintaining single-task focus in code changes
-- `verify-changes.mdc`: Standards for verifying code changes through compilation, testing, and linting
