@@ -1,6 +1,7 @@
 ---
-description: Rule for automatically executing commands instead of suggesting them to the user.
-globs: *
+description: 
+globs: 
+alwaysApply: true
 ---
 # Command Execution
 
